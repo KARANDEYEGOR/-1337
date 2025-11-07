@@ -1,0 +1,10 @@
+robot.set_servo_angle(1, 90)   # колёса прямо
+robot.set_motor_power(60, 4)   # движение ~4 секунды на 60% мощности
+robot.stop()
+robot.set_servo_angle(1, 120)  # поворот колёс вправо для захода на зону
+robot.set_motor_power(50, 2)   # движение 2 секунды на 50% мощности для поворота
+robot.stop()
+robot.set_servo_angle(1, 90)  # выровнять колёса на въезд
+robot.set_motor_power(40, 3)  # плавное движение 3 секунды на 40% мощности в зону
+robot.stop()
+print("✅ Ровер в зоне погрузки.")
